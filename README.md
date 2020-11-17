@@ -1,2 +1,4 @@
-# StructuralPatterns
-Graphical Demos for Structural Patterns
+# Structural-Patterns
+Graphical demos for Structural Patterns
+
+switch branch to view different examples
