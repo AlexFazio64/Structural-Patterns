@@ -22,10 +22,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="846e8df2-d464-4078-a185-c103acf2e108" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pattern/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pattern/controller/RootController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pattern/view/root.fxml" afterDir="false" />
+    <list default="true" id="846e8df2-d464-4078-a185-c103acf2e108" name="Default Changelist" comment="Shared structure setup">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/adapter/AdapteeAnimal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/adapter/AnimalVehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/adapter/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/adapter/TargetVehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/car.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/dog.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pattern/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/controller/RootController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pattern/controller/RootController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/resources/dummy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/view/root.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/pattern/view/root.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +50,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -51,6 +65,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1kQyZc1yH9jTnmDgkux8qHLHWBq" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="compactDirectories" value="true" />
@@ -60,7 +77,9 @@
     <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
@@ -69,7 +88,25 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable" />
   </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pattern.adapter" />
+    </key>
+  </component>
   <component name="RunManager">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pattern.Client" />
+      <module name="Structural-Patterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -81,6 +118,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Client" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -91,8 +133,16 @@
       <option name="presentableId" value="Default" />
       <updated>1605647166709</updated>
       <workItem from="1605647168600" duration="607000" />
-      <workItem from="1605652445622" duration="549000" />
+      <workItem from="1605652445622" duration="8711000" />
     </task>
+    <task id="LOCAL-00001" summary="Shared structure setup">
+      <created>1605653158733</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605653158733</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,18 +159,51 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Shared structure setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Shared structure setup" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="115" key="#com.intellij.ide.util.MemberChooser" timestamp="1605652771346">
+    <state x="527" y="201" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605653033296">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="115" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605652771346" />
+    <state x="527" y="201" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1605653033296" />
+    <state x="574" y="115" key="#com.intellij.ide.util.MemberChooser" timestamp="1605655133609">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="115" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605655133609" />
+    <state width="1493" height="204" key="GridCell.Tab.0.bottom" timestamp="1605661061737">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="204" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605661061737" />
+    <state width="1493" height="204" key="GridCell.Tab.0.center" timestamp="1605661061736">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="204" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605661061736" />
+    <state width="1493" height="204" key="GridCell.Tab.0.left" timestamp="1605661061736">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="204" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605661061736" />
+    <state width="1493" height="204" key="GridCell.Tab.0.right" timestamp="1605661061736">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="204" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605661061736" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1605652562288">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605652562288" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605652737707">
+    <state x="361" y="126" key="Vcs.Push.Dialog.v2" timestamp="1605653167080">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605652737707" />
+    <state x="361" y="126" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605653167080" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1605660731971">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1605660731971" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605655696563">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605655696563" />
   </component>
 </project>

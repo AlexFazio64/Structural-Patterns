@@ -11,7 +11,7 @@ public class Client extends Application {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("view/root.fxml"));
 		Stage mainStage = new Stage();
 		mainStage.setScene(new Scene(loader.load()));
-		mainStage.setTitle("TITLE");
+		mainStage.setTitle("Driving simulator");
 		mainStage.setResizable(false);
 		mainStage.setWidth(600);
 		mainStage.setHeight(400);
