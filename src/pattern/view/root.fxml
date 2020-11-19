@@ -1,9 +1,226 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.AnchorPane?>
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="pattern.controller.RootController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="pattern.controller.RootController">
+	<BorderPane layoutX="200.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0"
+	            AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+		<center>
+			<HBox alignment="CENTER" fillHeight="false" prefHeight="100.0" prefWidth="200.0" spacing="20.0"
+			      BorderPane.alignment="CENTER">
+				<BorderPane prefHeight="300.0" prefWidth="500.0">
+					<center>
+						<Canvas fx:id="pic" height="300.0" pickOnBounds="true" width="400.0">
+							<BorderPane.margin>
+								<Insets bottom="10.0" left="10.0" right="10.0"/>
+							</BorderPane.margin>
+						</Canvas>
+					</center>
+					<bottom>
+						<HBox fx:id="volumeBox" alignment="CENTER" spacing="30.0" BorderPane.alignment="CENTER">
+							<BorderPane.margin>
+								<Insets/>
+							</BorderPane.margin>
+							<CheckBox fx:id="enabled" allowIndeterminate="true" disable="true" indeterminate="true"
+							          mnemonicParsing="false"/>
+							<Label text="Volume"/>
+							<ProgressBar fx:id="volumeBar" prefWidth="200.0" progress="0.0"/>
+						</HBox>
+					</bottom>
+					<left>
+						<BorderPane BorderPane.alignment="CENTER">
+							<center>
+								<Label fx:id="channel" alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity"
+								       prefWidth="53.0" text="CH:0" textAlignment="CENTER" textFill="#2cbd33">
+									<font>
+										<Font size="20.0"/>
+									</font>
+								</Label>
+							</center>
+						</BorderPane>
+					</left>
+				</BorderPane>
+				<BorderPane style="-fx-border-color: black; -fx-border-radius: 10;">
+					<center>
+						<GridPane alignment="CENTER" prefWidth="150.0" vgap="25.0">
+							<columnConstraints>
+								<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+								<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+							</columnConstraints>
+							<rowConstraints>
+								<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+								<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+								<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+							</rowConstraints>
+							<padding>
+								<Insets bottom="10.0" top="10.0"/>
+							</padding>
+							<BorderPane GridPane.columnIndex="1">
+								<center>
+									<Label fx:id="mute" alignment="CENTER" contentDisplay="CENTER"
+									       onMouseClicked="#mute" prefWidth="65.0"
+									       style="-fx-border-color: black; -fx-border-radius: 5px;" text="🔈X"
+									       textAlignment="CENTER" BorderPane.alignment="CENTER">
+										<font>
+											<Font name="Segoe UI Emoji" size="30.0"/>
+										</font>
+										<BorderPane.margin>
+											<Insets/>
+										</BorderPane.margin>
+										<padding>
+											<Insets bottom="5.0" top="5.0"/>
+										</padding>
+									</Label>
+								</center>
+							</BorderPane>
+							<BorderPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+								<center>
+									<Label fx:id="volUp" alignment="CENTER" contentDisplay="CENTER"
+									       onMouseClicked="#volUp" prefWidth="65.0"
+									       style="-fx-border-color: black; -fx-border-radius: 5px;" text="🔊+"
+									       textAlignment="CENTER" BorderPane.alignment="CENTER">
+										<font>
+											<Font name="Segoe UI Emoji" size="30.0"/>
+										</font>
+										<textFill>
+											<LinearGradient startX="0.3244274536161933" startY="0.16412218108431986">
+												<stops>
+													<Stop>
+														<color>
+															<Color red="0.11565789580345154" green="0.7710526585578918"
+															       blue="0.33412280678749084"/>
+														</color>
+													</Stop>
+													<Stop offset="1.0">
+														<color>
+															<Color green="0.6236842274665833"
+															       blue="0.19750000536441803"/>
+														</color>
+													</Stop>
+												</stops>
+											</LinearGradient>
+										</textFill>
+										<BorderPane.margin>
+											<Insets/>
+										</BorderPane.margin>
+										<padding>
+											<Insets bottom="5.0" top="5.0"/>
+										</padding>
+									</Label>
+								</center>
+							</BorderPane>
+							<BorderPane GridPane.rowIndex="1">
+								<center>
+									<Label fx:id="volDown" alignment="CENTER" contentDisplay="CENTER"
+									       onMouseClicked="#volDown" prefWidth="65.0"
+									       style="-fx-border-color: black; -fx-border-radius: 5px;" text="🔉-"
+									       textAlignment="CENTER" BorderPane.alignment="CENTER">
+										<font>
+											<Font name="Segoe UI Emoji" size="30.0"/>
+										</font>
+										<textFill>
+											<LinearGradient startX="0.3244274536161933" startY="0.16412218108431986">
+												<stops>
+													<Stop>
+														<color>
+															<Color red="0.11565789580345154" green="0.7710526585578918"
+															       blue="0.33412280678749084"/>
+														</color>
+													</Stop>
+													<Stop offset="1.0">
+														<color>
+															<Color green="0.6236842274665833"
+															       blue="0.19750000536441803"/>
+														</color>
+													</Stop>
+												</stops>
+											</LinearGradient>
+										</textFill>
+										<BorderPane.margin>
+											<Insets/>
+										</BorderPane.margin>
+										<padding>
+											<Insets bottom="5.0" top="5.0"/>
+										</padding>
+									</Label>
+								</center>
+							</BorderPane>
+							<BorderPane layoutX="10.0" layoutY="38.0">
+								<center>
+									<Label fx:id="power" alignment="CENTER" contentDisplay="CENTER"
+									       onMouseClicked="#power" prefWidth="65.0"
+									       style="-fx-border-color: black; -fx-border-radius: 5px;" text="🔌"
+									       textAlignment="CENTER" textFill="RED" BorderPane.alignment="CENTER">
+										<font>
+											<Font name="Segoe UI Emoji" size="30.0"/>
+										</font>
+										<BorderPane.margin>
+											<Insets/>
+										</BorderPane.margin>
+										<padding>
+											<Insets bottom="5.0" top="5.0"/>
+										</padding>
+									</Label>
+								</center>
+							</BorderPane>
+							<BorderPane layoutX="10.0" layoutY="8.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+								<center>
+									<Label fx:id="next" alignment="CENTER" contentDisplay="CENTER"
+									       onMouseClicked="#next" prefWidth="65.0"
+									       style="-fx-border-color: black; -fx-border-radius: 5px;" text="⏩"
+									       textAlignment="CENTER" textFill="BLUE" BorderPane.alignment="CENTER">
+										<font>
+											<Font name="Segoe UI Emoji" size="30.0"/>
+										</font>
+										<BorderPane.margin>
+											<Insets/>
+										</BorderPane.margin>
+										<padding>
+											<Insets bottom="5.0" top="5.0"/>
+										</padding>
+									</Label>
+								</center>
+							</BorderPane>
+							<BorderPane layoutX="10.0" layoutY="8.0" GridPane.rowIndex="2">
+								<center>
+									<Label fx:id="previous" alignment="CENTER" contentDisplay="CENTER"
+									       onMouseClicked="#prev" prefWidth="65.0"
+									       style="-fx-border-color: black; -fx-border-radius: 5px;" text="⏪"
+									       textAlignment="CENTER" textFill="BLUE" BorderPane.alignment="CENTER">
+										<font>
+											<Font name="Segoe UI Emoji" size="30.0"/>
+										</font>
+										<BorderPane.margin>
+											<Insets/>
+										</BorderPane.margin>
+										<padding>
+											<Insets bottom="5.0" top="5.0"/>
+										</padding>
+									</Label>
+								</center>
+							</BorderPane>
+						</GridPane>
+					</center>
+					<top>
+						<Label fx:id="remoteName" BorderPane.alignment="CENTER">
+							<font>
+								<Font size="18.0"/>
+							</font>
+							<BorderPane.margin>
+								<Insets bottom="10.0"/>
+							</BorderPane.margin>
+						</Label>
+					</top>
+					<padding>
+						<Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+					</padding>
+				</BorderPane>
+			</HBox>
+		</center>
+	</BorderPane>
 </AnchorPane>
