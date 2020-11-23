@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0"
+            fx:controller="pattern.controller.ComponentInfoController">
+	<BorderPane layoutX="200.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0"
+	            AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+		<top>
+			<Label fx:id="typeLbl" BorderPane.alignment="CENTER">
+				<font>
+					<Font size="40.0"/>
+				</font>
+			</Label>
+		</top>
+		<center>
+			<HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" BorderPane.alignment="CENTER">
+				<BorderPane fx:id="picPane" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS"/>
+				<VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" HBox.hgrow="ALWAYS">
+					<BorderPane VBox.vgrow="ALWAYS">
+						<center>
+							<Label fx:id="modelLbl" alignment="CENTER" BorderPane.alignment="CENTER_LEFT">
+								<font>
+									<Font size="24.0"/>
+								</font>
+							</Label>
+						</center>
+					</BorderPane>
+					<BorderPane layoutX="10.0" layoutY="10.0" VBox.vgrow="ALWAYS">
+						<center>
+							<Label fx:id="manufacturerLbl" alignment="CENTER" BorderPane.alignment="CENTER_LEFT">
+								<font>
+									<Font size="24.0"/>
+								</font>
+							</Label>
+						</center>
+					</BorderPane>
+					<BorderPane layoutX="10.0" layoutY="45.0" VBox.vgrow="ALWAYS">
+						<center>
+							<Label fx:id="priceLbl" alignment="CENTER" BorderPane.alignment="CENTER_LEFT">
+								<font>
+									<Font size="24.0"/>
+								</font>
+							</Label>
+						</center>
+					</BorderPane>
+				</VBox>
+			</HBox>
+		</center>
+	</BorderPane>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="pattern.controller.CaseInteriorController">
+	<BorderPane layoutX="-0.6000000238418579" layoutY="-0.6000000238418579" AnchorPane.bottomAnchor="0.0"
+	            AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+		<top>
+			<Label text="Case Interior" BorderPane.alignment="CENTER">
+				<font>
+					<Font size="40.0"/>
+				</font>
+			</Label>
+		</top>
+		<center>
+			<ScrollPane fitToHeight="true" fitToWidth="true" hvalue="0.5" vbarPolicy="NEVER"
+			            BorderPane.alignment="CENTER">
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+					<HBox fx:id="hbox" alignment="CENTER" spacing="20.0" AnchorPane.bottomAnchor="0.0"
+					      AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+				</AnchorPane>
+			</ScrollPane>
+		</center>
+	</BorderPane>
+</AnchorPane>
