@@ -1,9 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.AnchorPane?>
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="pattern.controller.RootController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="pattern.controller.RootController">
+	<HBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0"
+	      AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+		<BorderPane fx:id="picPane" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+			<bottom>
+				<Label fx:id="priceLbl" BorderPane.alignment="CENTER">
+					<font>
+						<Font size="30.0"/>
+					</font>
+				</Label>
+			</bottom>
+		</BorderPane>
+		<ScrollPane fitToWidth="true" prefHeight="200.0" prefWidth="200.0">
+			<VBox alignment="TOP_CENTER" minHeight="0.0" minWidth="0.0" spacing="5.0">
+				<BorderPane layoutX="10.0" layoutY="10.0">
+					<center>
+						<Label text="Ingredients" BorderPane.alignment="CENTER">
+							<font>
+								<Font size="26.0"/>
+							</font>
+						</Label>
+					</center>
+				</BorderPane>
+				<HBox alignment="CENTER" layoutX="10.0" layoutY="85.0" prefHeight="70.0" spacing="10.0">
+					<Button fx:id="sauceBtn" mnemonicParsing="false" onAction="#addSauce" prefHeight="30.0"
+					        text="Add Sauce"/>
+				</HBox>
+				<HBox alignment="CENTER" prefHeight="70.0" spacing="10.0">
+					<Button fx:id="mozzarellaBtn" mnemonicParsing="false" onAction="#addCheese" prefHeight="30.0"
+					        text="Add Cheese"/>
+				</HBox>
+				<HBox alignment="CENTER" layoutX="10.0" layoutY="156.0" prefHeight="70.0" spacing="10.0">
+					<Button fx:id="salamiBtn" mnemonicParsing="false" onAction="#addSalami" prefHeight="30.0"
+					        text="Add Salami"/>
+				</HBox>
+				<HBox alignment="CENTER" layoutX="10.0" layoutY="85.0" prefHeight="70.0" spacing="10.0"
+				      VBox.vgrow="ALWAYS">
+					<Button fx:id="mediaBtn" mnemonicParsing="false" onAction="#pizzeria" text="Play / Pause"/>
+					<Button fx:id="resetBtn" defaultButton="true" mnemonicParsing="false" onAction="#reset"
+					        text="Reset"/>
+				</HBox>
+			</VBox>
+		</ScrollPane>
+	</HBox>
 </AnchorPane>

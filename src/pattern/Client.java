@@ -6,12 +6,13 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Client extends Application {
+	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("view/root.fxml"));
 		primaryStage.setScene(new Scene(loader.load()));
-		primaryStage.setTitle("TITLE");
-		primaryStage.setResizable(false);
+		primaryStage.setTitle("Most Italian software ever");
+		primaryStage.setResizable(true);
 		primaryStage.setWidth(600);
 		primaryStage.setHeight(400);
 		primaryStage.show();
@@ -20,4 +21,9 @@ public class Client extends Application {
 	public static void main(String[] args) {
 		launch(args);
 	}
+	
+	public static String getRes(String file) {
+		return Client.class.getResource(file).toString();
+	}
+	
 }
