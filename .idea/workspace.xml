@@ -28,32 +28,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="846e8df2-d464-4078-a185-c103acf2e108" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pattern/facade/AudioFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pattern/facade/Facade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pattern/facade/FileExtensionChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pattern/facade/FilePacker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pattern/facade/GraphicFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pattern/facade/StandaloneFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pattern/resources/CAR.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pattern/resources/K-on-avatar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pattern/resources/WRYYY.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pattern/resources/chika.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pattern/resources/chika2.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pattern/resources/d6itqhv-d9d.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pattern/resources/icons/audio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pattern/resources/icons/graphic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pattern/resources/images.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pattern/resources/messaggggio.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pattern/resources/orange justice.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pattern/resources/pizza time.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pattern/resources/size200.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pattern/resources/take on me.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pattern/resources/te magno er core.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/proxy/FileProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pattern/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pattern/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pattern/controller/RootController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pattern/controller/RootController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pattern/resources/dummy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pattern/view/root.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/pattern/view/root.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/facade/AudioFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/facade/Facade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pattern/proxy/Facade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/facade/FileExtensionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pattern/proxy/FileExtensionChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/facade/FilePacker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pattern/proxy/FilePacker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/facade/GraphicFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pattern/proxy/GraphicFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/facade/StandaloneFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pattern/proxy/StandaloneFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/resources/WRYYY.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/resources/chika.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/resources/chika2.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/resources/icons/audio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/resources/messaggggio.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/resources/orange justice.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/resources/pizza time.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/resources/take on me.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/resources/te magno er core.mp3" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +62,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="facade" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -184,26 +182,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="488" y="201" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1606360074285" />
-    <state x="574" y="115" key="#com.intellij.ide.util.MemberChooser" timestamp="1606351172369">
+    <state x="574" y="115" key="#com.intellij.ide.util.MemberChooser" timestamp="1606982471349">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="115" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606351172369" />
-    <state width="1493" height="204" key="GridCell.Tab.0.bottom" timestamp="1606360265307">
+    <state x="574" y="115" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606982471349" />
+    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606982340502">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="204" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606360265307" />
-    <state width="1493" height="204" key="GridCell.Tab.0.center" timestamp="1606360265307">
+    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1606982340502" />
+    <state width="1493" height="204" key="GridCell.Tab.0.bottom" timestamp="1606984669565">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="204" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606360265307" />
-    <state width="1493" height="204" key="GridCell.Tab.0.left" timestamp="1606360265307">
+    <state width="1493" height="204" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606984669565" />
+    <state width="1493" height="204" key="GridCell.Tab.0.center" timestamp="1606984669565">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="204" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606360265307" />
-    <state width="1493" height="204" key="GridCell.Tab.0.right" timestamp="1606360265307">
+    <state width="1493" height="204" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606984669565" />
+    <state width="1493" height="204" key="GridCell.Tab.0.left" timestamp="1606984669565">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="204" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606360265307" />
+    <state width="1493" height="204" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606984669565" />
+    <state width="1493" height="204" key="GridCell.Tab.0.right" timestamp="1606984669565">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="204" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606984669565" />
     <state width="1493" height="253" key="GridCell.Tab.1.bottom" timestamp="1606360080870">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -248,10 +250,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1606350908783" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606356778104">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606982868763">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1606356778104" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1606982868763" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

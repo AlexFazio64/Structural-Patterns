@@ -1,4 +1,4 @@
-package pattern.facade;
+package pattern.proxy;
 
 import javafx.scene.layout.BorderPane;
 import pattern.Client;
@@ -8,10 +8,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Facade {
-	private static final FileExtensionChecker audio = new FileExtensionChecker("mp3", "wav");
 	private static final FileExtensionChecker graphic = new FileExtensionChecker("jpg", "jpeg", "png", "bmp");
 	
-	public static List<BorderPane> exploreDirectory(String directory) {
+	public static List<BorderPane> exploreDirectory(String directory, boolean proxy) {
 		ArrayList<BorderPane> files = new ArrayList<>();
 		
 		File dir = new File(directory);
@@ -22,10 +21,8 @@ public class Facade {
 			if ( file_names != null ) {
 				for (String s: file_names) {
 					StandaloneFile f;
-					if ( audio.check(s) ) {
-						f = new AudioFile(Client.res(s));
-					} else if ( graphic.check(s) ) {
-						f = new GraphicFile(Client.res(s));
+					if ( graphic.check(s) ) {
+						f = proxy ? new FileProxy(Client.res(s)) : new GraphicFile(Client.res(s));
 					} else {
 						continue;
 					}

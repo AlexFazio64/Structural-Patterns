@@ -14,7 +14,7 @@ public class Client extends Application {
 		stage = primaryStage;
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("view/root.fxml"));
 		primaryStage.setScene(new Scene(loader.load()));
-		primaryStage.setTitle("File Explorer");
+		primaryStage.setTitle("Proxy File Explorer");
 		primaryStage.setResizable(false);
 		primaryStage.show();
 	}

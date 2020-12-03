@@ -1,4 +1,4 @@
-package pattern.facade;
+package pattern.proxy;
 
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;

@@ -1,4 +1,4 @@
-package pattern.facade;
+package pattern.proxy;
 
 public class FileExtensionChecker {
 	private final String[] exts;

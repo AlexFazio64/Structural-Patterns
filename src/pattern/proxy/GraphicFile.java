@@ -1,4 +1,4 @@
-package pattern.facade;
+package pattern.proxy;
 
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
@@ -12,14 +12,15 @@ public class GraphicFile extends StandaloneFile {
 	Stage preview;
 	
 	public GraphicFile(String path) {
-		super("graphic", path);
+		super(path);
+		super.icon = new Image(path);
+		
 		preview = new Stage(StageStyle.UTILITY);
 		preview.setTitle(info);
 		preview.setResizable(false);
-		preview.setScene(new Scene(new BorderPane(new ImageView(new Image(path)))));
+		preview.setScene(new Scene(new BorderPane(new ImageView(icon))));
 		preview.setWidth(icon.getWidth() + 50);
 		preview.setHeight(icon.getHeight() + 50);
-		
 	}
 	
 	@Override
@@ -29,10 +30,5 @@ public class GraphicFile extends StandaloneFile {
 		} else {
 			preview.close();
 		}
-	}
-	
-	@Override
-	public String getInfo() {
-		return super.getInfo() + "\t - " + (int) icon.getWidth() + "x" + (int) icon.getHeight();
 	}
 }
