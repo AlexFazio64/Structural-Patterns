@@ -1,9 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.AnchorPane?>
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="pattern.controller.RootController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="pattern.controller.RootController">
+	<ScrollPane fitToWidth="true" hbarPolicy="NEVER" layoutX="300.0" layoutY="406.0" prefHeight="200.0"
+	            prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+	            AnchorPane.rightAnchor="0.0">
+		<FlowPane fx:id="flowPn" prefWidth="200.0"/>
+	</ScrollPane>
+	<BorderPane layoutX="300.0" layoutY="100.0" prefHeight="350.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0"
+	            AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+		<top>
+			<Label text="Flyweight resource monitor" BorderPane.alignment="CENTER">
+				<font>
+					<Font size="36.0"/>
+				</font>
+				<padding>
+					<Insets bottom="10.0" top="10.0"/>
+				</padding>
+			</Label>
+		</top>
+		<right>
+			<BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+				<center>
+					<VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+						<HBox prefHeight="100.0" prefWidth="200.0">
+							<BorderPane prefHeight="200.0" prefWidth="200.0">
+								<center>
+									<Label text="RAM" BorderPane.alignment="CENTER"/>
+								</center>
+							</BorderPane>
+							<BorderPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+								<center>
+									<Label fx:id="ramLbl" text="0MB" BorderPane.alignment="CENTER"/>
+								</center>
+							</BorderPane>
+						</HBox>
+						<HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+							<BorderPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+								<center>
+									<Label fx:id="charsLbl" text="0 characters" BorderPane.alignment="CENTER"/>
+								</center>
+							</BorderPane>
+						</HBox>
+						<HBox prefHeight="100.0" prefWidth="200.0">
+							<BorderPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+								<center>
+									<Button fx:id="clearBtn" mnemonicParsing="false" onAction="#reset" text="Clear"
+									        BorderPane.alignment="CENTER"/>
+								</center>
+							</BorderPane>
+						</HBox>
+					</VBox>
+				</center>
+			</BorderPane>
+		</right>
+		<center>
+			<BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+				<center>
+					<VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+						<HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
+							<padding>
+								<Insets left="10.0" right="10.0"/>
+							</padding>
+							<Label prefWidth="70.0" text="Raw input"/>
+							<TextField fx:id="raw_inputTf" alignment="CENTER" promptText="input" HBox.hgrow="ALWAYS"/>
+							<Button defaultButton="true" mnemonicParsing="false" onAction="#raw_loadBtn"
+							        prefWidth="60.0" text="load"/>
+						</HBox>
+						<HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0"
+						      spacing="25.0">
+							<padding>
+								<Insets left="10.0" right="10.0"/>
+							</padding>
+							<Label prefWidth="70.0" text="Flyweight"/>
+							<TextField fx:id="flyTf" alignment="CENTER" promptText="input" HBox.hgrow="ALWAYS"/>
+							<Button defaultButton="true" mnemonicParsing="false" onAction="#fly_loadBtn"
+							        prefWidth="60.0" text="load"/>
+						</HBox>
+						<HBox alignment="CENTER" layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0"
+						      spacing="25.0">
+							<padding>
+								<Insets left="10.0" right="10.0"/>
+							</padding>
+							<Label prefWidth="70.0" text="Multiplier"/>
+							<Slider fx:id="multiplierSld" majorTickUnit="50.0" max="500.0" minorTickCount="0"
+							        showTickLabels="true" showTickMarks="true" HBox.hgrow="ALWAYS"/>
+						</HBox>
+					</VBox>
+				</center>
+			</BorderPane>
+		</center>
+	</BorderPane>
 </AnchorPane>

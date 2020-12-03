@@ -19,13 +19,48 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="846e8df2-d464-4078-a185-c103acf2e108" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pattern/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pattern/controller/RootController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pattern/view/root.fxml" afterDir="false" />
+    <list default="true" id="846e8df2-d464-4078-a185-c103acf2e108" name="Default Changelist" comment="Facade Implementation">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/flyweight/CharacterFlyweightFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/flyweight/CharacterView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/g.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/h.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/i.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/j.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/k.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/l.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/o.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/q.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/r.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/s.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/t.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/u.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/v.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/w.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/resources/z.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pattern/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/controller/RootController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pattern/controller/RootController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/view/root.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/pattern/view/root.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +76,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -51,6 +91,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1kQyZc1yH9jTnmDgkux8qHLHWBq" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="compactDirectories" value="true" />
@@ -60,9 +103,13 @@
     <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last.edited.regexp" value="è+è+è&#10;" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -70,17 +117,37 @@
     <property name="settings.editor.selected.configurable" value="com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pattern.Client" />
+      <module name="Structural-Patterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Client" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -92,6 +159,10 @@
       <updated>1605647166709</updated>
       <workItem from="1605647168600" duration="607000" />
       <workItem from="1605652445622" duration="549000" />
+      <workItem from="1606423523523" duration="606000" />
+      <workItem from="1606956943763" duration="636000" />
+      <workItem from="1606957789821" duration="1687000" />
+      <workItem from="1606959495334" duration="12852000" />
     </task>
     <servers />
   </component>
@@ -108,19 +179,47 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="115" key="#com.intellij.ide.util.MemberChooser" timestamp="1605652771346">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="115" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605652771346" />
+    <state width="1493" height="204" key="GridCell.Tab.0.bottom" timestamp="1606981089145">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="204" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606981089145" />
+    <state width="1493" height="204" key="GridCell.Tab.0.center" timestamp="1606981089145">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="204" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606981089145" />
+    <state width="1493" height="204" key="GridCell.Tab.0.left" timestamp="1606981089145">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="204" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606981089145" />
+    <state width="1493" height="204" key="GridCell.Tab.0.right" timestamp="1606981089145">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="204" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606981089145" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1605652562288">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605652562288" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605652737707">
+    <state x="499" y="160" key="extract.method.dialog" timestamp="1606977383647">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605652737707" />
+    <state x="499" y="160" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1606977383647" />
+    <state x="554" y="148" key="refactoring.ChangeSignatureDialog" timestamp="1606973832153">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="554" y="148" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1606973832153" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606980927132">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1606980927132" />
   </component>
 </project>
